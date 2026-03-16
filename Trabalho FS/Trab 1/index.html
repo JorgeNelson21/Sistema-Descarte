@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Descarte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <div class="container" id="login">
+        <h2>Login</h2>
+        <input id="loginUsuario" placeholder="Usuário">
+        <input id="loginSenha" type="password" placeholder="Senha">
+        <button onclick="entrar()">Entrar</button>
+        <p class="link" onclick="abrirCadastro()">Criar conta</p>
+    </div>
+
+    <!-- CADASTRO -->
+    <div class="container" id="cadastro">
+        <h2>Cadastro</h2>
+        <input id="nome" placeholder="Nome">
+        <input id="email" placeholder="Email">
+        <input id="usuarioCadastro" placeholder="Usuário">
+        <input id="senhaCadastro" type="password" placeholder="Senha">
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p class="link" onclick="voltarLogin()">Voltar para login</p>
+
+    </div>
+
+
+    <!-- MENU PRINCIPAL -->
+    <div class="container" id="menu">
+        <h2>Consulte Descarte</h2>
+        <button onclick="mostrar('pontos')">Pontos de Descarte</button>
+        <button onclick="mostrar('denuncia')">Registrar Denúncia</button>
+        <button onclick="mostrar('verDenuncias')">Ver Denúncias Ativas</button>
+        <button onclick="mostrar('coleta')">Solicitar Coleta</button>
+        <div id="conteudo"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
